@@ -1,12 +1,7 @@
 
-Initialize git repository:
+Clone git repository:
 ```
-git init
-```
-
-Add upstream URL:
-```
-git remote add agent https://github.com/errorcv/agent.git
+git clone https://github.com/errorcv/agent
 ```
 
 Add submodule and define the master branch as the one you want to track:
@@ -23,12 +18,18 @@ git submodule update --remote
 
 Push changes:
 ```
-git add .
-git commit -m "Add frontend and backend submodules"
-git push --set-upstream agent master
+git add backend
+git commit -m "Add LICENSE frontend and backend submodules"
+git push
 ```
 
 Pull all changes in the repo including changes in the submodules:
 ```
 git pull --recurse-submodules
 ```
+
+Update agent:
+```
+
+```
+
