@@ -30,6 +30,6 @@ git pull --recurse-submodules
 
 Update agent:
 ```
-
+git config --global alias.pullall '!git pull && git submodule update --init --recursive'
 ```
 
